@@ -1,0 +1,24 @@
+SELECT Title FROM movies;
+SELECT Director FROM movies;
+SELECT Title, Director FROM movies;
+SELECT Title, Year FROM movies;
+SELECT * FROM movies;
+
+
+
+SELECT * FROM movies where id=6;
+SELECT * FROM movies where year>=2000 and year<=2010;
+SELECT * FROM movies where not (year>=2000 and year<=2010);
+SELECT * FROM movies where id<6 order by year asc ;
+
+
+SELECT * FROM movies where title like 'toy story%';
+SELECT * FROM movies where director like 'john%';
+SELECT * FROM movies where director not like 'john%';
+SELECT * FROM movies where title  like 'WALL-%';
+
+SELECT Distinct Director from movies where order by director asc;
+SELECT * from movies order by year desc limit 4;
+SELECT * from movies order by title limit 5;
+SELECT * from movies order by title limit 5 offset 5;
+
